@@ -12,9 +12,9 @@ export const ProductCard = ({product, className, onAdd}) => {
 
   return (
     <Fieldset legend="Header" toggleable className={'headerLegend'}>
-    <p className="m-0">
+
     <div className={'product ' + className}>
-      {<Image src="src/assets/helicopter.jpg" alt="Image" width="250" />}
+    <Image src="https://klike.net/uploads/posts/2023-02/1676955781_1.jpg" alt="Image" width="200" height='200' preview />
       <div className={'title'}>{product.title}</div>
       <div className={'description'}>{product.description}</div>
       <div className={'price'}>
@@ -24,7 +24,7 @@ export const ProductCard = ({product, className, onAdd}) => {
         Добавить в корзину
       </Button>
     </div>
-    </p>
+
 </Fieldset>
   )
 }

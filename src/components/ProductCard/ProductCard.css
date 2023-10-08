@@ -3,7 +3,7 @@
     flex-direction: column;
     border: 1px solid var(--tg-theme-button-color);
     padding: 15px;
-    width: 170px;
+    text-align: center;
 }
 
 .img {
@@ -26,3 +26,9 @@
     padding: 0.5rem 1rem;
     background-color: grey;
 }
+
+.p-fieldset {
+    width: 350px;
+    margin-inline: 40px;
+    margin-bottom: 20px;
+  }

@@ -11,6 +11,7 @@ const getTotalPrice = (items) => {
   }, 0)
 }
 
+
 export const ProductList = ({products}) => {
 
   const { tg, queryId } = useTelegram()
@@ -64,13 +65,19 @@ export const ProductList = ({products}) => {
 
   return (
     <div className={'list'}>
-      {products.map(item => (
+      {/* {products.map(item => (
         <ProductCard
           product={item}
           onAdd={onAdd}
           className={'item'}>
         </ProductCard>
-      ))}
+      ))} */}
+
+{products.map((product) => (
+  <ProductCard key={product.id} product={product} className={'item'} onAdd={onAdd} />
+))}
+
+
     </div>
   )
 }
